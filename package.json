@@ -18,7 +18,8 @@
   "author": "s2oBCN",
   "devDependencies": {
     "cypress": "^9.0.0",
-    "cypress-cucumber-preprocessor": "^4.3.0"
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "cypress-screenplay": "0.2.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
