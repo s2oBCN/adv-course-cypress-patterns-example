@@ -1,0 +1,8 @@
+{
+    "video": false,
+    "baseUrl": "https://onna.com",
+    "testFiles": "**/*.{feature,features}",
+    "ignoreTestFiles": "*.js",
+    "chromeWebSecurity": false,
+    "watchForFileChanges": false
+}
