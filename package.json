@@ -4,7 +4,8 @@
   "description": "Example of cypress patterns implementations with cucumber",
   "scripts": {
     "test": "cypress run --spec \"**/*.feature\"",
-    "test:all": "cypress run --spec \"**/*.features\""
+    "test:all": "cypress run --spec \"**/*.features\"",
+    "cy:report": "node cypress/support/cucumber-reports.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,16 @@
   "author": "s2oBCN",
   "devDependencies": {
     "cypress": "^9.0.0",
-    "cypress-cucumber-preprocessor": "^4.3.0"
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "reports/cucumber-json",
+      "filePrefix": ""
+    }
   }
 }

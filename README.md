@@ -17,3 +17,8 @@ Actor, Task, Question
 
 support/
 Five original blocks were simplified to 3: Actor, Task and Questions, here translated to Agente, Tarefa e DadoQuandoEntao, respectively.
+
+
+DataBuilder: https://medium.com/@jesusmurfontanals/builder-pattern-con-javascript-1ee3f9e2b7e9
+
+Jenkins: npm install multiple-cucumber-html-reporter --save-dev
