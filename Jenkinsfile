@@ -4,10 +4,8 @@ pipeline {
       image 'cypress/base:10'
     }
   }
-
   stages {
     stage('build and test') {
-
       steps {
         sh 'npm run test'
         sh "npm run cy:report"
