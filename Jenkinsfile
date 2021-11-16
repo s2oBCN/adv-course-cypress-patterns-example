@@ -10,7 +10,8 @@ pipeline {
   stages {
     stage('build and test') {
       steps {
-        sh 'npm run test'
+        sh 'npm run i'
+        sh script:'npm run test', returnStatus:true
         sh "npm run cy:report"
       }
     }
