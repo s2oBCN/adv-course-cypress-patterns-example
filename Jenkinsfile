@@ -4,6 +4,9 @@ pipeline {
       image 'cypress/base:10'
     }
   }
+  options {
+      ansiColor('xterm')
+  }
   stages {
     stage('build and test') {
       steps {
