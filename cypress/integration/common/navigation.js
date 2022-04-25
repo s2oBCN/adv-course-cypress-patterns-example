@@ -6,7 +6,7 @@ Given("I'm at {string} page", page => {
   if (page === 'Home'){
     cy.visit("/")
   } else {
-    cy.visit("/${page}")
+    cy.visit("/" + page)
   }
 });
 
